@@ -4,8 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>christyan brayan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
-  <h1>christyan brayan</h1>
+
+  <main>
+
+    <figure>
+      <img src="https://avatars.githubusercontent.com/u/43487458" alt="Foto de Perfil de Christyan Brayan">
+      <figcaption>
+        <span> Christyan Brayan </span>
+      </figcaption>
+    </figure>
+
+    <section id="social">
+      <a href="https://linkedin.com/in/christyanbrayan" target="_blank">
+        <i class="icon devicon-linkedin-plain"></i>
+      </a>
+      <a href="https://github.com/christyanbrayan" target="_blank">
+        <i class="icon devicon-github-plain"></i>
+      </a>
+      <a href="https://behance.net/christyanbrayan" target="_blank">
+        <i class="icon devicon-behance-plain"></i>
+      </a>
+    </section>
+
+  </main>
+
+  <script>
+
+    var icons = document.querySelectorAll('i.icon')
+
+    icons.forEach(function (icon) {
+      icon.parentNode.onmouseover = function () {
+        icon.classList.add('colored');
+      };
+      icon.parentNode.onmouseout = function () {
+        icon.classList.remove('colored');
+      };
+    });
+
+  </script>
+
 </body>
 </html>
